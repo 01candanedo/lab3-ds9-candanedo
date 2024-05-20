@@ -8,7 +8,7 @@ import {
 import CustomFooter from "@/components/customs/footer"
 
 
-export default function Component() {
+export default function LoginComponent() {
   return (
     <>
       <div className="absolute top-0 left-0 w-full">
