@@ -151,7 +151,7 @@ export default function CustomDrawer() {
 
     return (
         <div className="flex h-screen fixed z-9">
-            <div className="flex flex-col bg-[#51626F] text-gray-50 w-64 shrink-0 py-4 px-6 backdrop-blur-lg bg-opacity-90 dark:bg-opacity-90">
+            <div className="flex flex-col bg-[#51626F] text-gray-50 w-64 shrink-0 py-4 px-6">
                 <div className="flex items-center justify-between mb-6">
                     <div className="w-full space-y-6 py-8 px-1">
                         <div className="flex items-center justify-center">
@@ -174,44 +174,63 @@ export default function CustomDrawer() {
                     </Button>
                 </div>
                 <nav className="flex flex-col flex-1 gap-2 justify-between">
-          <div className="flex flex-col gap-2">
-            <Button
-              className="justify-start gap-3 px-4 py-2 rounded-md hover:bg-background focus:bg-background"
-              variant="ghost"
-            >
-              <MoveUpIcon className="h-5 w-5" />
-              <span>Promotions</span>
-            </Button>
-            <Button
-              className="justify-start gap-3 px-4 py-2 rounded-md hover:bg-background focus:bg-background"
-              variant="ghost"
-            >
-              <UserIcon className="h-5 w-5" />
-              <span>Profile</span>
-            </Button>
-            <Button
-              className="justify-start gap-3 px-4 py-2 rounded-md hover:bg-background focus:bg-background"
-              variant="ghost"
-            >
-              <ClockIcon className="h-5 w-5" />
-              <span>History</span>
-            </Button>
-            <Button
-              className="justify-start gap-3 px-4 py-2 rounded-md hover:bg-background focus:bg-background"
-              variant="ghost"
-            >
-              <HomeIcon className="h-5 w-5" />
-              <span>Main</span>
-            </Button>
-          </div>
-          <Button
-            className="justify-start gap-3 px-4 py-2 rounded-md hover:bg-background focus:bg-background"
-            variant="ghost"
-          >
-            <LogOutIcon className="h-5 w-5" />
-            <span>Log Out</span>
-          </Button>
-        </nav>
+                    <div className="flex flex-col gap-2">
+                        <Link
+                        href="/dashboard/promotion"
+                    >
+                        <Button
+                            className="justify-start gap-3 px-4 w-full py-2 rounded-md hover:bg-background focus:bg-background"
+                            variant="ghost"
+                        >
+                            <MoveUpIcon className="h-5 w-5" />
+                            <span>Promotions</span>
+                        </Button>
+                        </Link>
+                        <Link
+                        href="/dashboard/profile"
+                    >
+                        <Button
+                            className="justify-start gap-3 px-4 py-2 w-full rounded-md hover:bg-background focus:bg-background"
+                            variant="ghost"
+                        >
+                            <UserIcon className="h-5 w-5" />
+                            <span>Profile</span>
+                        </Button>
+                        </Link>
+                        <Link
+                        href="/dashboard/finances"
+                    >
+                        <Button
+                            className="justify-start gap-3 w-full px-4 py-2 rounded-md hover:bg-background focus:bg-background"
+                            variant="ghost"
+                        >
+                            <ClockIcon className="h-5 w-5" />
+                            <span>Finances</span>
+                        </Button>
+
+                        </Link>
+                        <Link
+                        href="/dashboard/main"
+                    >
+                        <Button className="justify-start gap-3 px-4 py-2 w-full rounded-md hover:bg-background focus:bg-background"
+                        variant="ghost"
+                        >
+                            <HomeIcon className="h-5 w-5" />
+                            <span>Main</span>
+                        </Button>
+                    </Link>
+                    </div>
+                    <Link
+                        href="/login"
+                    >
+                        <Button className="justify-start gap-3 px-4 py-2 w-full rounded-md hover:bg-background focus:bg-background"
+                        variant="ghost"
+                        >
+                            <LogOutIcon className="h-5 w-5" />
+                            <span>Log Out</span>
+                        </Button>
+                    </Link>
+                </nav>
             </div>
             <main className="flex-1 p-8" />
         </div>
