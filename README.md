@@ -1,8 +1,29 @@
-# Laboratorio N3 del curso DS9
+# Laboratorio N3 del curso DS9 - Web
 
 ### Marcos Candanedo
 ### 8-960-2099
 ### Framework NextJS
+
+### Paso 1: Clonamos el repositorio en algún lugar en nuestra pc:
+
+Comando: 
+```bash 
+https://github.com/01candanedo/web-lab3-ds9-candanedo.git 
+```
+
+### Paso 2: Entramos en la terminal, y en la dirección del repositorio clonado, escribimos:
+
+Comando: 
+```bash 
+npm install
+```
+### Paso 3: Luego ejecutamos el comando para levantar el servidor local:
+
+Comando: 
+```bash 
+npm run dev
+```
+Y listo.
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
