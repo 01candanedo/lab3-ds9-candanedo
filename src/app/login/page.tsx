@@ -7,7 +7,6 @@ import {
 } from "@/components/ui/card"
 import CustomFooter from "@/components/customs/footer"
 
-
 export default function LoginComponent() {
   return (
     <>
